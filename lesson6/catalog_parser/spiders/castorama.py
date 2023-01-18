@@ -19,9 +19,9 @@ class CastoramaSpider(scrapy.Spider):
         loader = ItemLoader(item=CatalogParserItem(), response=response)
         loader.add_xpath('name', "//h1[contains(@class, 'product-essential__name')]/text()")
         loader.add_xpath('price', "(//div[contains(@class, 'price-wrapper')])[1]/descendant::span[@class='price']/span/span/text()")
+        loader.add_value('url', response.url)
         loader.add_xpath('photos',
                          "//img[contains(@class, 'top-slide__img')]/@data-src")
-        loader.add_value('url', response.url)
         yield loader.load_item()
 
         # name = response.xpath("//h1[contains(@class, 'product-essential__name')]/text()").get()

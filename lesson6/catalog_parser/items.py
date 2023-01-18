@@ -15,8 +15,18 @@ def process_price(value):
     return {'money': money, 'currency': currency}
 
 
+def process_name(value):
+    # Возможно здесь можно было использовать output_processor=Join
+    # Но здесь еще дополнительно добавил strip
+    return ''.join(value).strip()
+
+
+def process_photos(value):
+    return list(['https://www.castorama.ru' + photo for photo in value])
+
+
 class CatalogParserItem(scrapy.Item):
-    name = scrapy.Field(output_processor=TakeFirst())
+    name = scrapy.Field(input_processor=Compose(process_name), output_processor=TakeFirst())
     price = scrapy.Field(input_processor=Compose(process_price), output_processor=TakeFirst())
     url = scrapy.Field(output_processor=TakeFirst())
-    photos = scrapy.Field()
+    photos = scrapy.Field(input_processor=Compose(process_photos))
