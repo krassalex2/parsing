@@ -1,0 +1,470 @@
+"D:\GeekBrainsLesssons\2 четверь\Парсинг данных\dz\lesson6\venv\Scripts\python.exe" "C:\Program Files\JetBrains\PyCharm Community Edition 2021.2.2\plugins\python-ce\helpers\pydev\pydevd.py" --multiproc --qt-support=auto --client 127.0.0.1 --port 61835 --file "D:/GeekBrainsLesssons/2 четверь/Парсинг данных/dz/lesson6/catalog_parser/runner.py"
+warning: PYDEVD_USE_CYTHON environment variable is set to 'NO'. Frame evaluator will be also disabled because it requires Cython extensions to be enabled in order to operate correctly.
+C:\Program Files\JetBrains\PyCharm Community Edition 2021.2.2\plugins\python-ce\helpers\pydev\pydevd.py:1844: DeprecationWarning: currentThread() is deprecated, use current_thread() instead
+  dummy_thread = threading.currentThread()
+Connected to pydev debugger (build 212.5712.39)
+2023-01-25 23:38:10 [scrapy.crawler] INFO: Overridden settings:
+{'BOT_NAME': 'catalog_parser',
+ 'CONCURRENT_REQUESTS': 1,
+ 'DOWNLOAD_DELAY': 1,
+ 'NEWSPIDER_MODULE': 'catalog_parser.spiders',
+ 'SPIDER_MODULES': ['catalog_parser.spiders'],
+ 'USER_AGENT': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 '
+               '(KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36'}
+2023-01-25 23:38:10 [py.warnings] WARNING: D:\GeekBrainsLesssons\2 четверь\Парсинг данных\dz\lesson6\venv\lib\site-packages\scrapy\utils\request.py:231: ScrapyDeprecationWarning: '2.6' is a deprecated value for the 'REQUEST_FINGERPRINTER_IMPLEMENTATION' setting.
+
+It is also the default value. In other words, it is normal to get this warning if you have not defined a value for the 'REQUEST_FINGERPRINTER_IMPLEMENTATION' setting. This is so for backward compatibility reasons, but it will change in a future version of Scrapy.
+
+See the documentation of the 'REQUEST_FINGERPRINTER_IMPLEMENTATION' setting for information on how to handle this deprecation.
+  return cls(crawler)
+
+2023-01-25 23:38:10 [scrapy.extensions.telnet] INFO: Telnet Password: 73b8c869f4d6dbee
+2023-01-25 23:38:10 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+2023-01-25 23:38:11 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2023-01-25 23:38:11 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2023-01-25 23:38:11 [scrapy.middleware] INFO: Enabled item pipelines:
+['catalog_parser.pipelines.CatalogPhotosPipeline',
+ 'catalog_parser.pipelines.CatalogParserPipeline']
+2023-01-25 23:38:11 [scrapy.core.engine] INFO: Spider opened
+2023-01-25 23:38:11 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2023-01-25 23:38:11 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6023
+2023-01-25 23:38:12 [filelock] DEBUG: Attempting to acquire lock 2398956875024 on D:\GeekBrainsLesssons\2 четверь\Парсинг данных\dz\lesson6\venv\lib\site-packages\tldextract\.suffix_cache/publicsuffix.org-tlds\de84b5ca2167d4c83e38fb162f2e8738.tldextract.json.lock
+2023-01-25 23:38:12 [filelock] DEBUG: Lock 2398956875024 acquired on D:\GeekBrainsLesssons\2 четверь\Парсинг данных\dz\lesson6\venv\lib\site-packages\tldextract\.suffix_cache/publicsuffix.org-tlds\de84b5ca2167d4c83e38fb162f2e8738.tldextract.json.lock
+2023-01-25 23:38:12 [filelock] DEBUG: Attempting to release lock 2398956875024 on D:\GeekBrainsLesssons\2 четверь\Парсинг данных\dz\lesson6\venv\lib\site-packages\tldextract\.suffix_cache/publicsuffix.org-tlds\de84b5ca2167d4c83e38fb162f2e8738.tldextract.json.lock
+2023-01-25 23:38:12 [filelock] DEBUG: Lock 2398956875024 released on D:\GeekBrainsLesssons\2 четверь\Парсинг данных\dz\lesson6\venv\lib\site-packages\tldextract\.suffix_cache/publicsuffix.org-tlds\de84b5ca2167d4c83e38fb162f2e8738.tldextract.json.lock
+2023-01-25 23:38:12 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.castorama.ru/lighting/interior-lighting/> (referer: None)
+2023-01-25 23:38:13 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.castorama.ru/bra_eglo_savoy_82751_1xe14x40_vt_bronza_statinovoe_steklo_beloe/> (referer: https://www.castorama.ru/lighting/interior-lighting/)
+2023-01-25 23:38:13 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://www.castorama.ru/upload/iblock/e23/9sij0i1np61qjp0eafdsm8f4g0cfv1il/1001415514_1.jpg> referred in <None>
+2023-01-25 23:38:13 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://www.castorama.ru/upload/iblock/b4c/22r8tql65midhye2t5u9em3icxg16isb/1001415514_2.jpg> referred in <None>
+2023-01-25 23:38:13 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.castorama.ru/bra_eglo_savoy_82751_1xe14x40_vt_bronza_statinovoe_steklo_beloe/>
+{'_id': ObjectId('63d19335dda567e852eb01a9'),
+ 'name': 'Бра Eglo Savoy 82751 1 х E14 х 40 Вт белое',
+ 'photos': [{'checksum': 'daaff5b40a6aa26903a163f2037a5334',
+             'path': 'full/2e4633ce308c9bc646f6cb64a5be1dba98f5f6dd.jpg',
+             'status': 'uptodate',
+             'url': 'https://www.castorama.ru/upload/iblock/e23/9sij0i1np61qjp0eafdsm8f4g0cfv1il/1001415514_1.jpg'},
+            {'checksum': 'fdb277265c05caa05e2a45a6de531198',
+             'path': 'full/67e0ec2762e90fc39e2ea2ed641a1840a0910313.jpg',
+             'status': 'uptodate',
+             'url': 'https://www.castorama.ru/upload/iblock/b4c/22r8tql65midhye2t5u9em3icxg16isb/1001415514_2.jpg'}],
+ 'price': {'currency': 'руб. ', 'money': 3280},
+ 'url': 'https://www.castorama.ru/bra_eglo_savoy_82751_1xe14x40_vt_bronza_statinovoe_steklo_beloe/'}
+2023-01-25 23:38:14 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.castorama.ru/shinoprovod_novotech_3zhily_1m_cher/> (referer: https://www.castorama.ru/lighting/interior-lighting/)
+2023-01-25 23:38:14 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://www.castorama.ru/upload/iblock/e20/8zrtd1zqvei77zkts0bzilnmfhgbokn2/1001476414_1.jpg> referred in <None>
+2023-01-25 23:38:14 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://www.castorama.ru/upload/iblock/41e/sgl3xlb2qd7vbvb43stqatathdcoeypz/1001476414_2.jpg> referred in <None>
+2023-01-25 23:38:14 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.castorama.ru/shinoprovod_novotech_3zhily_1m_cher/>
+{'_id': ObjectId('63d19336dda567e852eb01aa'),
+ 'name': 'Шинопровод (трек) Novotech 135001 1 м, черный',
+ 'photos': [{'checksum': '11ddcb2076accfbb1163ed8d3bf696ed',
+             'path': 'full/80d3371fb2569da16b35963eb08b2878c8ac5dfa.jpg',
+             'status': 'uptodate',
+             'url': 'https://www.castorama.ru/upload/iblock/e20/8zrtd1zqvei77zkts0bzilnmfhgbokn2/1001476414_1.jpg'},
+            {'checksum': 'dfdbace9ce5dee23691e63d508c27eca',
+             'path': 'full/070b37785e9537f09a3daca3fad6ee6add1bae87.jpg',
+             'status': 'uptodate',
+             'url': 'https://www.castorama.ru/upload/iblock/41e/sgl3xlb2qd7vbvb43stqatathdcoeypz/1001476414_2.jpg'}],
+ 'price': {'currency': 'руб. ', 'money': 1459},
+ 'url': 'https://www.castorama.ru/shinoprovod_novotech_3zhily_1m_cher/'}
+2023-01-25 23:38:15 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.castorama.ru/shinoprovod_novotech_3zhily_2m_bel/> (referer: https://www.castorama.ru/lighting/interior-lighting/)
+2023-01-25 23:38:15 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://www.castorama.ru/upload/iblock/535/jeix7kd6g2pjycw4lk2toeoq1eu7j2h0/1001476415_1.jpg> referred in <None>
+2023-01-25 23:38:15 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://www.castorama.ru/upload/iblock/c6c/5rxgzw9flkp1dmpda6qlk61g1nlqeg8g/1001476415_2.jpg> referred in <None>
+2023-01-25 23:38:15 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.castorama.ru/shinoprovod_novotech_3zhily_2m_bel/>
+{'_id': ObjectId('63d19337dda567e852eb01ab'),
+ 'name': 'Шинопровод (трек) Novotech 135002 2 м, белый',
+ 'photos': [{'checksum': '8651faf6b44a08df4c904ff7e07979cb',
+             'path': 'full/0bf08324a6a0640bac5583bc44dc48d815c83da8.jpg',
+             'status': 'uptodate',
+             'url': 'https://www.castorama.ru/upload/iblock/535/jeix7kd6g2pjycw4lk2toeoq1eu7j2h0/1001476415_1.jpg'},
+            {'checksum': '1f8d89546f3beef7a8f1890f67a052ef',
+             'path': 'full/94c175fcf706fd815a841fa4dc9920d0cbd76c07.jpg',
+             'status': 'uptodate',
+             'url': 'https://www.castorama.ru/upload/iblock/c6c/5rxgzw9flkp1dmpda6qlk61g1nlqeg8g/1001476415_2.jpg'}],
+ 'price': {'currency': 'руб. ', 'money': 2899},
+ 'url': 'https://www.castorama.ru/shinoprovod_novotech_3zhily_2m_bel/'}
+2023-01-25 23:38:16 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.castorama.ru/shinoprovod_novotech_3zhily_2m_cher/> (referer: https://www.castorama.ru/lighting/interior-lighting/)
+2023-01-25 23:38:16 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://www.castorama.ru/upload/iblock/0f7/hhbbw9sy8a6ps0xy8pdwcr7wgswsqu2b/1001476416_1.jpg> referred in <None>
+2023-01-25 23:38:16 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://www.castorama.ru/upload/iblock/126/m205pdyihvouker0tjvidojsuyyml2qi/1001476416_2.jpg> referred in <None>
+2023-01-25 23:38:16 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://www.castorama.ru/upload/iblock/983/rrtg0yktsdmidy1jycn5t38kr11mbwhx/1001476416_3.jpg> referred in <None>
+2023-01-25 23:38:16 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.castorama.ru/shinoprovod_novotech_3zhily_2m_cher/>
+{'_id': ObjectId('63d19338dda567e852eb01ac'),
+ 'name': 'Шинопровод (трек) Novotech 135003 2 м, черный',
+ 'photos': [{'checksum': '838b13a5f7beb7fbc8614a478ea5a10a',
+             'path': 'full/e53a63bc6f7acaf06ea09b2fd1d0bb0be82f3a13.jpg',
+             'status': 'uptodate',
+             'url': 'https://www.castorama.ru/upload/iblock/0f7/hhbbw9sy8a6ps0xy8pdwcr7wgswsqu2b/1001476416_1.jpg'},
+            {'checksum': '4b89529585f27b13c839f23f40436ab3',
+             'path': 'full/4408fef3917d31c79ea5de9854740b70da133431.jpg',
+             'status': 'uptodate',
+             'url': 'https://www.castorama.ru/upload/iblock/126/m205pdyihvouker0tjvidojsuyyml2qi/1001476416_2.jpg'},
+            {'checksum': '52b5057cdcc2828e053297e773ae233f',
+             'path': 'full/246d924b9794baa7a55b6860af08c75db70868dd.jpg',
+             'status': 'uptodate',
+             'url': 'https://www.castorama.ru/upload/iblock/983/rrtg0yktsdmidy1jycn5t38kr11mbwhx/1001476416_3.jpg'}],
+ 'price': {'currency': 'руб. ', 'money': 2899},
+ 'url': 'https://www.castorama.ru/shinoprovod_novotech_3zhily_2m_cher/'}
+2023-01-25 23:38:17 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.castorama.ru/soedinitel_treka_nov_135008_bel/> (referer: https://www.castorama.ru/lighting/interior-lighting/)
+2023-01-25 23:38:18 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://www.castorama.ru/upload/iblock/dc8/nktzcfptpb3msh1htpwde6s2dltp2cln/1001476409_1.jpg> referred in <None>
+2023-01-25 23:38:18 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.castorama.ru/soedinitel_treka_nov_135008_bel/>
+{'_id': ObjectId('63d1933adda567e852eb01ad'),
+ 'name': 'Соединитель для трека Novotech 135008, белый',
+ 'photos': [{'checksum': 'c7ddef4d117bb01c3c6ed9f20306778b',
+             'path': 'full/eae9c57bf633e20fa1a0e307c0992c55de890747.jpg',
+             'status': 'uptodate',
+             'url': 'https://www.castorama.ru/upload/iblock/dc8/nktzcfptpb3msh1htpwde6s2dltp2cln/1001476409_1.jpg'}],
+ 'price': {'currency': 'руб. ', 'money': 429},
+ 'url': 'https://www.castorama.ru/soedinitel_treka_nov_135008_bel/'}
+2023-01-25 23:38:19 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.castorama.ru/soedinitel_treka_nov_135009_cher/> (referer: https://www.castorama.ru/lighting/interior-lighting/)
+2023-01-25 23:38:19 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://www.castorama.ru/upload/iblock/e68/mch1yyv4web0dz4vqkhyx2jn9twsde89/1001476410_1.jpg> referred in <None>
+2023-01-25 23:38:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.castorama.ru/soedinitel_treka_nov_135009_cher/>
+{'_id': ObjectId('63d1933bdda567e852eb01ae'),
+ 'name': 'Соединитель для трека Novotech 135009, черный',
+ 'photos': [{'checksum': 'a87f7efb36fc25bdaf35dffba70d1424',
+             'path': 'full/10d4ab84b4b69023f1fd32883359b1c5a0951edf.jpg',
+             'status': 'uptodate',
+             'url': 'https://www.castorama.ru/upload/iblock/e68/mch1yyv4web0dz4vqkhyx2jn9twsde89/1001476410_1.jpg'}],
+ 'price': {'currency': 'руб. ', 'money': 429},
+ 'url': 'https://www.castorama.ru/soedinitel_treka_nov_135009_cher/'}
+2023-01-25 23:38:20 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.castorama.ru/soedinitel_treka_nov_135004_bel/> (referer: https://www.castorama.ru/lighting/interior-lighting/)
+2023-01-25 23:38:20 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://www.castorama.ru/upload/iblock/89a/284eq2enwmumagukga0yg0z5ny0jr92d/1001476411_1.jpg> referred in <None>
+2023-01-25 23:38:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.castorama.ru/soedinitel_treka_nov_135004_bel/>
+{'_id': ObjectId('63d1933cdda567e852eb01af'),
+ 'name': 'Соединитель для трека Novotech 135004, белый',
+ 'photos': [{'checksum': '15b3149cfe4a4edb7e9dcb5ecaa54d1d',
+             'path': 'full/cb662b989bfcf8f5f13c235135e5b27adb710592.jpg',
+             'status': 'uptodate',
+             'url': 'https://www.castorama.ru/upload/iblock/89a/284eq2enwmumagukga0yg0z5ny0jr92d/1001476411_1.jpg'}],
+ 'price': {'currency': 'руб. ', 'money': 429},
+ 'url': 'https://www.castorama.ru/soedinitel_treka_nov_135004_bel/'}
+2023-01-25 23:38:22 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.castorama.ru/soedinitel_treka_nov_135005_cher/> (referer: https://www.castorama.ru/lighting/interior-lighting/)
+2023-01-25 23:38:22 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://www.castorama.ru/upload/iblock/96b/9kct2yzaj3guvpqowlfdmqwdxfsfvuft/1001476412_1.jpg> referred in <None>
+2023-01-25 23:38:22 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.castorama.ru/soedinitel_treka_nov_135005_cher/>
+{'_id': ObjectId('63d1933edda567e852eb01b0'),
+ 'name': 'Соединитель для трека Novotech 135005, черный',
+ 'photos': [{'checksum': '2a23e066693091a1c3b6080f5610a913',
+             'path': 'full/6a3d44180f614beb52ebed2ef9b9e659867814dc.jpg',
+             'status': 'uptodate',
+             'url': 'https://www.castorama.ru/upload/iblock/96b/9kct2yzaj3guvpqowlfdmqwdxfsfvuft/1001476412_1.jpg'}],
+ 'price': {'currency': 'руб. ', 'money': 429},
+ 'url': 'https://www.castorama.ru/soedinitel_treka_nov_135005_cher/'}
+2023-01-25 23:38:23 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.castorama.ru/vyk_l_dist_230v_2kh_kan_30m_tm75/> (referer: https://www.castorama.ru/lighting/interior-lighting/)
+2023-01-25 23:38:23 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://www.castorama.ru/upload/iblock/f4c/4ufiuzcm7k8igocxustglmu5zhp9w3hp/1001473076_1.jpg> referred in <None>
+2023-01-25 23:38:23 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.castorama.ru/vyk_l_dist_230v_2kh_kan_30m_tm75/>
+{'_id': ObjectId('63d1933fdda567e852eb01b1'),
+ 'name': 'Выключатель дистанционный Feron 23344, 2 канала',
+ 'photos': [{'checksum': '1f7706914a77c5464d7db83c88ee28e9',
+             'path': 'full/1f8d8ac7bd10b40c0f9805ced493ecd1bc5d9a4b.jpg',
+             'status': 'uptodate',
+             'url': 'https://www.castorama.ru/upload/iblock/f4c/4ufiuzcm7k8igocxustglmu5zhp9w3hp/1001473076_1.jpg'}],
+ 'price': {'currency': 'руб. ', 'money': 799},
+ 'url': 'https://www.castorama.ru/vyk_l_dist_230v_2kh_kan_30m_tm75/'}
+2023-01-25 23:38:24 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.castorama.ru/vyk_l_dist_230v_3kh_kan_30m_tm76/> (referer: https://www.castorama.ru/lighting/interior-lighting/)
+2023-01-25 23:38:25 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://www.castorama.ru/upload/iblock/3b9/j5ruaav8xfcxconcg34p3l3it4t0yk85/1001473077_1.jpg> referred in <None>
+2023-01-25 23:38:25 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.castorama.ru/vyk_l_dist_230v_3kh_kan_30m_tm76/>
+{'_id': ObjectId('63d19341dda567e852eb01b2'),
+ 'name': 'Выключатель дистанционный Feron 23345, 3 канала',
+ 'photos': [{'checksum': 'eac88d37e1678d441a128e186c482e1b',
+             'path': 'full/6c770cd9509704fea6b91c46ba5993fe964d001e.jpg',
+             'status': 'uptodate',
+             'url': 'https://www.castorama.ru/upload/iblock/3b9/j5ruaav8xfcxconcg34p3l3it4t0yk85/1001473077_1.jpg'}],
+ 'price': {'currency': 'руб. ', 'money': 899},
+ 'url': 'https://www.castorama.ru/vyk_l_dist_230v_3kh_kan_30m_tm76/'}
+2023-01-25 23:38:26 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.castorama.ru/vyk_l_dist_230v_4kh_kan_30m_tm74/> (referer: https://www.castorama.ru/lighting/interior-lighting/)
+2023-01-25 23:38:26 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://www.castorama.ru/upload/iblock/601/t3jspe6y92z2r3xck32hfovo6c2bistt/1001473078_1.jpg> referred in <None>
+2023-01-25 23:38:26 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.castorama.ru/vyk_l_dist_230v_4kh_kan_30m_tm74/>
+{'_id': ObjectId('63d19342dda567e852eb01b3'),
+ 'name': 'Выключатель дистанционный Feron 23263, 4 канала',
+ 'photos': [{'checksum': '4a6afba56342c87f9fc6f611a13da4d1',
+             'path': 'full/0c723684bbebd1c6a6621b3645d70c4c2464a581.jpg',
+             'status': 'uptodate',
+             'url': 'https://www.castorama.ru/upload/iblock/601/t3jspe6y92z2r3xck32hfovo6c2bistt/1001473078_1.jpg'}],
+ 'price': {'currency': 'руб. ', 'money': 1199},
+ 'url': 'https://www.castorama.ru/vyk_l_dist_230v_4kh_kan_30m_tm74/'}
+2023-01-25 23:38:27 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.castorama.ru/vyk_l_dist_230v_2kh_kan_30m_tm72/> (referer: https://www.castorama.ru/lighting/interior-lighting/)
+2023-01-25 23:38:27 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://www.castorama.ru/upload/iblock/944/xkl1g1ab55bry20uprwi8eb1wcl58qh5/1001473079_1.jpg> referred in <None>
+2023-01-25 23:38:27 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.castorama.ru/vyk_l_dist_230v_2kh_kan_30m_tm72/>
+{'_id': ObjectId('63d19343dda567e852eb01b4'),
+ 'name': 'Выключатель дистанционный Feron 23262, 2 канала',
+ 'photos': [{'checksum': '0fc3b40385c0a443c6036e08cd69e6ae',
+             'path': 'full/6924fb12b03f416ea10d905b2fd555da7e0717ce.jpg',
+             'status': 'uptodate',
+             'url': 'https://www.castorama.ru/upload/iblock/944/xkl1g1ab55bry20uprwi8eb1wcl58qh5/1001473079_1.jpg'}],
+ 'price': {'currency': 'руб. ', 'money': 999},
+ 'url': 'https://www.castorama.ru/vyk_l_dist_230v_2kh_kan_30m_tm72/'}
+2023-01-25 23:38:28 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.castorama.ru/sv_k_trek_novotech_gu10_50vt_cher/> (referer: https://www.castorama.ru/lighting/interior-lighting/)
+2023-01-25 23:38:28 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://www.castorama.ru/upload/iblock/9fd/wk2nwolh7z67wf5v4ozblogy31m5rqrv/1001476399_1.jpg> referred in <None>
+2023-01-25 23:38:28 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://www.castorama.ru/upload/iblock/70c/7yxzxh7qzj3suplm3y1de5hnckq2ctty/1001476399_2.jpg> referred in <None>
+2023-01-25 23:38:28 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.castorama.ru/sv_k_trek_novotech_gu10_50vt_cher/>
+{'_id': ObjectId('63d19344dda567e852eb01b5'),
+ 'name': 'Светильник трековый Novotech Pipe 370404, 1 х GU х 50 Вт, белый',
+ 'photos': [{'checksum': 'b1e81dff6f9aba67f096b4d947d4b7d0',
+             'path': 'full/06e03b5801b58211c8b3ce9b15d5a577fe493853.jpg',
+             'status': 'uptodate',
+             'url': 'https://www.castorama.ru/upload/iblock/9fd/wk2nwolh7z67wf5v4ozblogy31m5rqrv/1001476399_1.jpg'},
+            {'checksum': '574ec0f3b04be0c6b2cee0fee0bc6577',
+             'path': 'full/3d41d75dd3cc9f2bfa033d33fd57bd406afc752c.jpg',
+             'status': 'uptodate',
+             'url': 'https://www.castorama.ru/upload/iblock/70c/7yxzxh7qzj3suplm3y1de5hnckq2ctty/1001476399_2.jpg'}],
+ 'price': {'currency': 'руб. ', 'money': 1999},
+ 'url': 'https://www.castorama.ru/sv_k_trek_novotech_gu10_50vt_cher/'}
+2023-01-25 23:38:30 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.castorama.ru/sv_k_trek_nov_pipe_gu10_50vt_bel/> (referer: https://www.castorama.ru/lighting/interior-lighting/)
+2023-01-25 23:38:30 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://www.castorama.ru/upload/iblock/b0d/lvk35n2xauts3rxuxuufurpwepcbfi49/1001476401_1.jpg> referred in <None>
+2023-01-25 23:38:30 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://www.castorama.ru/upload/iblock/dd3/p0d271a3ia6b0ly7proo2cej91dcbn8a/1001476401_2.jpg> referred in <None>
+2023-01-25 23:38:30 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://www.castorama.ru/upload/iblock/39a/le3v376xs7c2v83fiw2sndayejz5y72u/1001476401_3.jpg> referred in <None>
+2023-01-25 23:38:30 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.castorama.ru/sv_k_trek_nov_pipe_gu10_50vt_bel/>
+{'_id': ObjectId('63d19346dda567e852eb01b6'),
+ 'name': 'Светильник трековый Novotech Pipe 370413, 1 х GU х 50 Вт, белый',
+ 'photos': [{'checksum': '4602527ad328d81ee070a6c1b6c4548f',
+             'path': 'full/9f9471bd683405256a3532b9a0495177a7e2da03.jpg',
+             'status': 'uptodate',
+             'url': 'https://www.castorama.ru/upload/iblock/b0d/lvk35n2xauts3rxuxuufurpwepcbfi49/1001476401_1.jpg'},
+            {'checksum': '0d318655124439b7f4c5ca0ce55511b1',
+             'path': 'full/5d43b91dab293c2cb062f6591e837980b24960cd.jpg',
+             'status': 'uptodate',
+             'url': 'https://www.castorama.ru/upload/iblock/dd3/p0d271a3ia6b0ly7proo2cej91dcbn8a/1001476401_2.jpg'},
+            {'checksum': 'ccb5dd85b4c15940b82af2306046e062',
+             'path': 'full/9ba663dcb19aef82dbe16364ee788ee1fd442017.jpg',
+             'status': 'uptodate',
+             'url': 'https://www.castorama.ru/upload/iblock/39a/le3v376xs7c2v83fiw2sndayejz5y72u/1001476401_3.jpg'}],
+ 'price': {'currency': 'руб. ', 'money': 949},
+ 'url': 'https://www.castorama.ru/sv_k_trek_nov_pipe_gu10_50vt_bel/'}
+2023-01-25 23:38:31 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.castorama.ru/sv_k_trek_nov_pipe_gu10_50vt_cher/> (referer: https://www.castorama.ru/lighting/interior-lighting/)
+2023-01-25 23:38:31 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://www.castorama.ru/upload/iblock/fba/m38zxodngiqt476vpiz0dmmu61n7wh9p/1001476402_1.jpg> referred in <None>
+2023-01-25 23:38:31 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://www.castorama.ru/upload/iblock/3b1/b0uu4g4ydslhbczq27k3ozr1ynsgarms/1001476402_2.jpg> referred in <None>
+2023-01-25 23:38:32 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.castorama.ru/sv_k_trek_nov_ufo_gu10_50vt_bel/> (referer: https://www.castorama.ru/lighting/interior-lighting/)
+2023-01-25 23:38:32 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://www.castorama.ru/upload/iblock/4d7/inyfqhzxpkuwatmvvn67zggyme1af3xz/1001476403_1.jpg> referred in <None>
+2023-01-25 23:38:32 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://www.castorama.ru/upload/iblock/93e/9ey2t5u3vkjzjbxnboy9bdp6x0k3il8e/1001476403_2.jpg> referred in <None>
+2023-01-25 23:38:32 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://www.castorama.ru/upload/iblock/f41/hlx69ryqro4kkrjtapr0gsxdz4yvjo2a/1001476403_3.jpg> referred in <None>
+2023-01-25 23:38:32 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.castorama.ru/sv_k_trek_nov_ufo_gu10_50vt_bel/>
+{'_id': ObjectId('63d19348dda567e852eb01b7'),
+ 'name': 'Светильник трековый Novotech Ufo 370409, 1 х GU х 50 Вт, белый',
+ 'photos': [{'checksum': '95c40b889266f337d51e4451b843fefa',
+             'path': 'full/3ff3cb423317488ac94dc0de5bbc757f9315cb5d.jpg',
+             'status': 'uptodate',
+             'url': 'https://www.castorama.ru/upload/iblock/4d7/inyfqhzxpkuwatmvvn67zggyme1af3xz/1001476403_1.jpg'},
+            {'checksum': '29d384ee56836611ccbddb53954c2de8',
+             'path': 'full/a4efb1527d5ef508143237d94aa480096cbb1549.jpg',
+             'status': 'uptodate',
+             'url': 'https://www.castorama.ru/upload/iblock/93e/9ey2t5u3vkjzjbxnboy9bdp6x0k3il8e/1001476403_2.jpg'},
+            {'checksum': '46747315a87f9a2686b302cef3aaf5c5',
+             'path': 'full/7d5cc780d2dcb0f9285c1a2d670b3c6f7dfbe2e9.jpg',
+             'status': 'uptodate',
+             'url': 'https://www.castorama.ru/upload/iblock/f41/hlx69ryqro4kkrjtapr0gsxdz4yvjo2a/1001476403_3.jpg'}],
+ 'price': {'currency': 'руб. ', 'money': 1959},
+ 'url': 'https://www.castorama.ru/sv_k_trek_nov_ufo_gu10_50vt_bel/'}
+2023-01-25 23:38:33 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.castorama.ru/upload/iblock/1e9/a05x8sb4az4sa8zjp1pccqxv7zi16umj/1001476402_3.jpg> (referer: None)
+2023-01-25 23:38:33 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET https://www.castorama.ru/upload/iblock/1e9/a05x8sb4az4sa8zjp1pccqxv7zi16umj/1001476402_3.jpg> referred in <None>
+2023-01-25 23:38:33 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.castorama.ru/sv_k_trek_nov_pipe_gu10_50vt_cher/>
+{'_id': ObjectId('63d19349dda567e852eb01b8'),
+ 'name': 'Светильник трековый Novotech Pipe 370412, 1 х GU х 50 Вт, черный',
+ 'photos': [{'checksum': '091fe4330f77dd6252b2b43279ad6d02',
+             'path': 'full/76c7aa6b0f455a2daf42e4213ec59560adf8f7f5.jpg',
+             'status': 'uptodate',
+             'url': 'https://www.castorama.ru/upload/iblock/fba/m38zxodngiqt476vpiz0dmmu61n7wh9p/1001476402_1.jpg'},
+            {'checksum': 'dfbef88d21ebfb4a04962575ecbff608',
+             'path': 'full/03e7500adaec6794e263c4cb8d192ef0c27d765b.jpg',
+             'status': 'uptodate',
+             'url': 'https://www.castorama.ru/upload/iblock/3b1/b0uu4g4ydslhbczq27k3ozr1ynsgarms/1001476402_2.jpg'},
+            {'checksum': '4a8a1eccce86b77af54b400c0514b917',
+             'path': 'full/ffd25f0db6dc1ee2c1d13abbf07e7dbffdac07ce.jpg',
+             'status': 'downloaded',
+             'url': 'https://www.castorama.ru/upload/iblock/1e9/a05x8sb4az4sa8zjp1pccqxv7zi16umj/1001476402_3.jpg'}],
+ 'price': {'currency': 'руб. ', 'money': 949},
+ 'url': 'https://www.castorama.ru/sv_k_trek_nov_pipe_gu10_50vt_cher/'}
+2023-01-25 23:38:34 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.castorama.ru/sv_k_trek_nov_ufo_gu10_50vt_cher/> (referer: https://www.castorama.ru/lighting/interior-lighting/)
+2023-01-25 23:38:34 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://www.castorama.ru/upload/iblock/e18/2hfkn5gejvvkfwrlth0nlok5zv0g52p5/1001476404_1.jpg> referred in <None>
+2023-01-25 23:38:34 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://www.castorama.ru/upload/iblock/af1/4hs72wx16vzs6iofskqrufm1rvv9bihp/1001476404_2.jpg> referred in <None>
+2023-01-25 23:38:34 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://www.castorama.ru/upload/iblock/202/tq10pi950mdvkc9gnzi602oity5dx5hq/1001476404_3.jpg> referred in <None>
+2023-01-25 23:38:35 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.castorama.ru/sv_k_trek_nov_ufo_gu10_50vt_cher/>
+{'_id': ObjectId('63d1934bdda567e852eb01b9'),
+ 'name': 'Светильник трековый Novotech Ufo 370408, 1 х GU х 50 Вт, черный',
+ 'photos': [{'checksum': '0cbbba9aebfca8b02923fe88ca9b0bd0',
+             'path': 'full/59c74bf78192f28407849dcfa25dc26987c31633.jpg',
+             'status': 'uptodate',
+             'url': 'https://www.castorama.ru/upload/iblock/e18/2hfkn5gejvvkfwrlth0nlok5zv0g52p5/1001476404_1.jpg'},
+            {'checksum': '1c8bac759d963347545d11a307f7b6a5',
+             'path': 'full/161abade4cc0d0373428ab880aebb7a593904fe6.jpg',
+             'status': 'uptodate',
+             'url': 'https://www.castorama.ru/upload/iblock/af1/4hs72wx16vzs6iofskqrufm1rvv9bihp/1001476404_2.jpg'},
+            {'checksum': 'c888dda95ed34d4364b3793f67b4dd90',
+             'path': 'full/4956c4cf709041d8196e6e4d7377731b16c690a0.jpg',
+             'status': 'uptodate',
+             'url': 'https://www.castorama.ru/upload/iblock/202/tq10pi950mdvkc9gnzi602oity5dx5hq/1001476404_3.jpg'}],
+ 'price': {'currency': 'руб. ', 'money': 1959},
+ 'url': 'https://www.castorama.ru/sv_k_trek_nov_ufo_gu10_50vt_cher/'}
+2023-01-25 23:38:36 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.castorama.ru/sv_k_trek_nov_mais_gu10_50vt_bel/> (referer: https://www.castorama.ru/lighting/interior-lighting/)
+2023-01-25 23:38:36 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://www.castorama.ru/upload/iblock/76d/hqiodo7ugsfroqgpvzogdibhf5a1oq03/1001476405_1.jpg> referred in <None>
+2023-01-25 23:38:36 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://www.castorama.ru/upload/iblock/3ec/bib6u9oiyw4iz53ohe0zh3x425eg08uj/1001476405_2.jpg> referred in <None>
+2023-01-25 23:38:36 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://www.castorama.ru/upload/iblock/5fa/jkxc226mri0ip8kjper2u6hjvuq213dc/1001476405_3.jpg> referred in <None>
+2023-01-25 23:38:36 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.castorama.ru/sv_k_trek_nov_mais_gu10_50vt_bel/>
+{'_id': ObjectId('63d1934cdda567e852eb01ba'),
+ 'name': 'Светильник трековый Novotech Mais 370764, 1 х GU х 50 Вт, белый',
+ 'photos': [{'checksum': '3a6049286bff86427555d1bb9b41f75e',
+             'path': 'full/8a50bfd8dcde8f0addd0a327adc55a4a2def8e61.jpg',
+             'status': 'uptodate',
+             'url': 'https://www.castorama.ru/upload/iblock/76d/hqiodo7ugsfroqgpvzogdibhf5a1oq03/1001476405_1.jpg'},
+            {'checksum': '4dc27410dc547ac520f59d64dbdf7627',
+             'path': 'full/4dfdc63baefa7993d2234ee26a0e6d44772d423d.jpg',
+             'status': 'uptodate',
+             'url': 'https://www.castorama.ru/upload/iblock/3ec/bib6u9oiyw4iz53ohe0zh3x425eg08uj/1001476405_2.jpg'},
+            {'checksum': '2e07d984dc2260133cc75e4b7a3364db',
+             'path': 'full/efebee5d65d2daa4b9dbc7101f6b239d7e375ea3.jpg',
+             'status': 'uptodate',
+             'url': 'https://www.castorama.ru/upload/iblock/5fa/jkxc226mri0ip8kjper2u6hjvuq213dc/1001476405_3.jpg'}],
+ 'price': {'currency': 'руб. ', 'money': 1389},
+ 'url': 'https://www.castorama.ru/sv_k_trek_nov_mais_gu10_50vt_bel/'}
+2023-01-25 23:38:37 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.castorama.ru/sv_k_trek_nov_mais_gu10_50vt_cher/> (referer: https://www.castorama.ru/lighting/interior-lighting/)
+2023-01-25 23:38:37 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://www.castorama.ru/upload/iblock/9bc/ilfb7s344gi1qjb2yz4ohfstor188yy0/1001476406_1.jpg> referred in <None>
+2023-01-25 23:38:37 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://www.castorama.ru/upload/iblock/31a/6tvq5zcoa3oohndoat6kongdgee0lue6/1001476406_2.jpg> referred in <None>
+2023-01-25 23:38:37 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://www.castorama.ru/upload/iblock/984/cpc09kel9k5p11tapfeb2ueg2ettrrrh/1001476406_3.jpg> referred in <None>
+2023-01-25 23:38:38 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.castorama.ru/sv_k_trek_nov_mais_gu10_50vt_cher/>
+{'_id': ObjectId('63d1934edda567e852eb01bb'),
+ 'name': 'Светильник трековый Novotech Mais 370763, 1 х GU х 50 Вт, черный',
+ 'photos': [{'checksum': '0b2f8b6e819b6467d3a1b58b265106e0',
+             'path': 'full/eddc770964bf8ba4215591f61a1b78fcee106e0b.jpg',
+             'status': 'uptodate',
+             'url': 'https://www.castorama.ru/upload/iblock/9bc/ilfb7s344gi1qjb2yz4ohfstor188yy0/1001476406_1.jpg'},
+            {'checksum': '331ad15e2f6766c57b75d3d5be9e12f2',
+             'path': 'full/d0e6a9d624f86c64a9776406c4e38db441d443f5.jpg',
+             'status': 'uptodate',
+             'url': 'https://www.castorama.ru/upload/iblock/31a/6tvq5zcoa3oohndoat6kongdgee0lue6/1001476406_2.jpg'},
+            {'checksum': '8bd3d631a7071b9bc8ee2c890528ee6a',
+             'path': 'full/293c1b446c140d8b11f34c5cac1aced06b0de543.jpg',
+             'status': 'uptodate',
+             'url': 'https://www.castorama.ru/upload/iblock/984/cpc09kel9k5p11tapfeb2ueg2ettrrrh/1001476406_3.jpg'}],
+ 'price': {'currency': 'руб. ', 'money': 1429},
+ 'url': 'https://www.castorama.ru/sv_k_trek_nov_mais_gu10_50vt_cher/'}
+2023-01-25 23:38:38 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.castorama.ru/sv_k_trek_novotech_gu10_50vt_cher-1001476400/> (referer: https://www.castorama.ru/lighting/interior-lighting/)
+2023-01-25 23:38:38 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://www.castorama.ru/upload/iblock/379/vmytokyloogqyc26iqaws623z4dipjqe/1001476400_1.jpg> referred in <None>
+2023-01-25 23:38:38 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://www.castorama.ru/upload/iblock/674/3hy3tshrr7egcsam5mcgjgxxyzjigzzq/1001476400_2.jpg> referred in <None>
+2023-01-25 23:38:38 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.castorama.ru/sv_k_trek_novotech_gu10_50vt_cher-1001476400/>
+{'_id': ObjectId('63d1934edda567e852eb01bc'),
+ 'name': 'Светильник трековый Novotech Pipe 370405, 1 х GU х 50 Вт, черный',
+ 'photos': [{'checksum': '72e8e991921516ac3f6743f44ef079c0',
+             'path': 'full/0363ee068884f05a25e9a1e0719c7f4c58deeb11.jpg',
+             'status': 'uptodate',
+             'url': 'https://www.castorama.ru/upload/iblock/379/vmytokyloogqyc26iqaws623z4dipjqe/1001476400_1.jpg'},
+            {'checksum': 'a56e6e6f5c671dd01807752b860fe1bd',
+             'path': 'full/64e02774d158ed7490c3c018255180eb57223c50.jpg',
+             'status': 'uptodate',
+             'url': 'https://www.castorama.ru/upload/iblock/674/3hy3tshrr7egcsam5mcgjgxxyzjigzzq/1001476400_2.jpg'}],
+ 'price': {'currency': 'руб. ', 'money': 1999},
+ 'url': 'https://www.castorama.ru/sv_k_trek_novotech_gu10_50vt_cher-1001476400/'}
+2023-01-25 23:38:39 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.castorama.ru/sv_k_na_zerk_odeo_g9_40vt_2446_2/> (referer: https://www.castorama.ru/lighting/interior-lighting/)
+2023-01-25 23:38:39 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://www.castorama.ru/upload/iblock/bd5/sv39j5ogmb0vm111pjzkhysysyurming/1001476423_1.jpg> referred in <None>
+2023-01-25 23:38:39 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://www.castorama.ru/upload/iblock/41f/2je6lqur42z5x3hlupekjkuw4sf2nxwq/1001476423_2.jpg> referred in <None>
+2023-01-25 23:38:40 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.castorama.ru/sv_k_na_zerk_odeo_g9_40vt_2446_2/>
+{'_id': ObjectId('63d19350dda567e852eb01bd'),
+ 'name': 'Светильник для зеркала Odeon Light 2446/2, 1 х G9 х 40 Вт, хром',
+ 'photos': [{'checksum': '3815d812d0509a7a13362dbb30113145',
+             'path': 'full/be6cb036bb599c1fe2e213b9b714e03c502ad73f.jpg',
+             'status': 'uptodate',
+             'url': 'https://www.castorama.ru/upload/iblock/bd5/sv39j5ogmb0vm111pjzkhysysyurming/1001476423_1.jpg'},
+            {'checksum': '095a7f017a941934f37f3caf7266ed93',
+             'path': 'full/238fddeb91ac779088c4f770ea8d9e291d224d2f.jpg',
+             'status': 'uptodate',
+             'url': 'https://www.castorama.ru/upload/iblock/41f/2je6lqur42z5x3hlupekjkuw4sf2nxwq/1001476423_2.jpg'}],
+ 'price': {'currency': 'руб. ', 'money': 3299},
+ 'url': 'https://www.castorama.ru/sv_k_na_zerk_odeo_g9_40vt_2446_2/'}
+2023-01-25 23:38:41 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.castorama.ru/sv_k_na_zerk_odeo_g9_40vt_2445_2/> (referer: https://www.castorama.ru/lighting/interior-lighting/)
+2023-01-25 23:38:41 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://www.castorama.ru/upload/iblock/7c9/k9tb0g3u5437alh2l1bzpu313w7dwgc9/1001476424_1.jpg> referred in <None>
+2023-01-25 23:38:41 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://www.castorama.ru/upload/iblock/1bb/u2v2ur3mg1ta7s0eke345tleqrcn3c4w/1001476424_2.jpg> referred in <None>
+2023-01-25 23:38:41 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.castorama.ru/sv_k_na_zerk_odeo_g9_40vt_2445_2/>
+{'_id': ObjectId('63d19351dda567e852eb01be'),
+ 'name': 'Светильник для зеркала Odeon Light 2445/2, 1 х G9 х 40 Вт, хром',
+ 'photos': [{'checksum': '6499aad99792cbec812a2c33c09b9811',
+             'path': 'full/cfa19238701762844615169a283f04c0737675c9.jpg',
+             'status': 'uptodate',
+             'url': 'https://www.castorama.ru/upload/iblock/7c9/k9tb0g3u5437alh2l1bzpu313w7dwgc9/1001476424_1.jpg'},
+            {'checksum': '37919b3f9d3826f2557f828ad6f53acf',
+             'path': 'full/6d1e9c17f4007142d9d63e587d776f6e606b4bc4.jpg',
+             'status': 'uptodate',
+             'url': 'https://www.castorama.ru/upload/iblock/1bb/u2v2ur3mg1ta7s0eke345tleqrcn3c4w/1001476424_2.jpg'}],
+ 'price': {'currency': 'руб. ', 'money': 3599},
+ 'url': 'https://www.castorama.ru/sv_k_na_zerk_odeo_g9_40vt_2445_2/'}
+2023-01-25 23:38:42 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.castorama.ru/sv_k_led_tango_glyanets_320_55mm/> (referer: https://www.castorama.ru/lighting/interior-lighting/)
+2023-01-25 23:38:42 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://www.castorama.ru/upload/iblock/5e6/3fpkccr1fnk0ya1n8b81xndido4usxw4/1001470777_1.jpg> referred in <None>
+2023-01-25 23:38:42 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://www.castorama.ru/upload/iblock/6b4/u2yzkat3bctgz1xduldk1m9qfnk800wa/1001470777_2.jpg> referred in <None>
+2023-01-25 23:38:42 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://www.castorama.ru/upload/iblock/bf0/8yg99ois9nb74o659gyf9sb1vh1a9b4t/1001470777_3.jpg> referred in <None>
+2023-01-25 23:38:42 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://www.castorama.ru/upload/iblock/47d/5ujeat7hy5tzfxww1ejh46b9nlqd82hb/1001470777_4.jpg> referred in <None>
+2023-01-25 23:38:42 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.castorama.ru/sv_k_led_tango_glyanets_320_55mm/>
+{'_id': ObjectId('63d19352dda567e852eb01bf'),
+ 'name': 'Светильник настенно-потолочный Tango глянец 1200083, LED х 24 Вт, '
+         'белый',
+ 'photos': [{'checksum': 'ea890c6a2ec77780b66a75a54c1fc253',
+             'path': 'full/c464f3e35ab068295a41d50dc7f9506bb8821ff5.jpg',
+             'status': 'uptodate',
+             'url': 'https://www.castorama.ru/upload/iblock/5e6/3fpkccr1fnk0ya1n8b81xndido4usxw4/1001470777_1.jpg'},
+            {'checksum': '3835c51621a5a9aa66561f28079e20f5',
+             'path': 'full/ce076ef0e2f1f000315cef66125eff0154ea460f.jpg',
+             'status': 'uptodate',
+             'url': 'https://www.castorama.ru/upload/iblock/6b4/u2yzkat3bctgz1xduldk1m9qfnk800wa/1001470777_2.jpg'},
+            {'checksum': 'bb315d987e8d379df11c1be95f2d47de',
+             'path': 'full/1d8844bdbc58355866c36eab068b33cd09ccc2c5.jpg',
+             'status': 'uptodate',
+             'url': 'https://www.castorama.ru/upload/iblock/bf0/8yg99ois9nb74o659gyf9sb1vh1a9b4t/1001470777_3.jpg'},
+            {'checksum': '7c80ed316411b3989bb75dfe542e33ba',
+             'path': 'full/b98629f81ac11f334d08de638409bd00f74d4962.jpg',
+             'status': 'uptodate',
+             'url': 'https://www.castorama.ru/upload/iblock/47d/5ujeat7hy5tzfxww1ejh46b9nlqd82hb/1001470777_4.jpg'}],
+ 'price': {'currency': 'руб. ', 'money': 1059},
+ 'url': 'https://www.castorama.ru/sv_k_led_tango_glyanets_320_55mm/'}
+2023-01-25 23:38:43 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.castorama.ru/lyustra_marbella_6x60w_e14_ip20/> (referer: https://www.castorama.ru/lighting/interior-lighting/)
+2023-01-25 23:38:43 [scrapy.pipelines.files] DEBUG: File (uptodate): Downloaded image from <GET https://www.castorama.ru/upload/iblock/18e/lkfj1y5e5wakl4yv0o1wulqh6uck1hdd/1001415552_1.jpg> referred in <None>
+2023-01-25 23:38:43 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.castorama.ru/lyustra_marbella_6x60w_e14_ip20/>
+{'_id': ObjectId('63d19353dda567e852eb01c0'),
+ 'name': 'Люстра Eglo Marbella 85857 6 х E14 х 60 Вт шампань',
+ 'photos': [{'checksum': '5589d1cec4ea32244ee0582a5fa524cf',
+             'path': 'full/c32afe23a237a449e8b3ef15adb255242ec33638.jpg',
+             'status': 'uptodate',
+             'url': 'https://www.castorama.ru/upload/iblock/18e/lkfj1y5e5wakl4yv0o1wulqh6uck1hdd/1001415552_1.jpg'}],
+ 'price': {'currency': 'руб. ', 'money': 14818},
+ 'url': 'https://www.castorama.ru/lyustra_marbella_6x60w_e14_ip20/'}
+2023-01-25 23:38:43 [scrapy.core.engine] INFO: Closing spider (finished)
+2023-01-25 23:38:43 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 12691,
+ 'downloader/request_count': 26,
+ 'downloader/request_method_count/GET': 26,
+ 'downloader/response_bytes': 1430395,
+ 'downloader/response_count': 26,
+ 'downloader/response_status_count/200': 26,
+ 'elapsed_time_seconds': 32.453782,
+ 'file_count': 48,
+ 'file_status_count/downloaded': 1,
+ 'file_status_count/uptodate': 47,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2023, 1, 25, 20, 38, 43, 992473),
+ 'httpcompression/response_bytes': 6971904,
+ 'httpcompression/response_count': 25,
+ 'item_scraped_count': 24,
+ 'log_count/DEBUG': 102,
+ 'log_count/INFO': 10,
+ 'log_count/WARNING': 1,
+ 'request_depth_max': 1,
+ 'response_received_count': 26,
+ 'scheduler/dequeued': 25,
+ 'scheduler/dequeued/memory': 25,
+ 'scheduler/enqueued': 25,
+ 'scheduler/enqueued/memory': 25,
+ 'start_time': datetime.datetime(2023, 1, 25, 20, 38, 11, 538691)}
+2023-01-25 23:38:43 [scrapy.core.engine] INFO: Spider closed (finished)
+
+Process finished with exit code 0
